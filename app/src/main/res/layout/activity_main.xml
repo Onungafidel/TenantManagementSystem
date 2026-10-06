@@ -38,7 +38,9 @@
             android:id="@+id/tenantNameEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:hint="Enter tenant name"
+            android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/tenantNameLabel"
             app:layout_constraintTop_toBottomOf="@id/titleTextView" />
@@ -55,6 +57,7 @@
             android:id="@+id/phoneEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:hint="Enter phone number"
             android:inputType="phone"
             app:layout_constraintEnd_toEndOf="parent"
@@ -65,6 +68,7 @@
             android:id="@+id/rentEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:hint="Enter rent"
             android:inputType="number"
             app:layout_constraintEnd_toEndOf="parent"
@@ -75,6 +79,7 @@
             android:id="@+id/saveButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:text="SAVE"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -89,6 +94,27 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/saveButton" />
+
+        <Button
+            android:id="@+id/callButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="CALL TENANT"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/tenantResultTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="SHARE TENANT"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/callButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
